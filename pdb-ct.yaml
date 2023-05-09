@@ -1,4 +1,4 @@
-apiVersion: templates.gatekeeper.sh/v1
+apiVersion: templates.gatekeeper.sh/v1beta1
 kind: ConstraintTemplate
 metadata:
   name: k8spoddisruptionbudget
@@ -10,7 +10,7 @@ metadata:
         [
           {
             "groups":["policy"],
-            "versions": ["v1"],
+            "versions": ["v1beta1"],
             "kinds": ["PodDisruptionBudget"]
           }
         ]
